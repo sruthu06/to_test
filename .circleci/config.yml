@@ -13,12 +13,11 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m venv citest
-            . citest/bin/activate
-            sudo pip install -r requirements.txt
+            sudo pip install pipenv
+            pipenv install
+
       # Step 3: run linter and tests
       - run:
           name: run tests
           command: |
-            . citest/bin/activate
-            python code.py
+            pipenv run python code.py
