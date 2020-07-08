@@ -10,12 +10,11 @@ jobs:
       # Step 1: obtain repo from GitHub
       - checkout
       # Step 2: create virtual env and install dependencies
-      - run:
-          name: install dependencies
-          command: |
-            sudo pip install pipenv
-	    pyenv install 3.6.3
-            pipenv install
+      #- run:
+      #    name: install dependencies
+      #    command: |
+      #      sudo pip install pipenv
+#	    pipenv install
 
       # Step 3: run linter and tests
       - run:
