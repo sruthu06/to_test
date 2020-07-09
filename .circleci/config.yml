@@ -73,7 +73,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            pytohn code.py
+            python code.py
 
 
 
