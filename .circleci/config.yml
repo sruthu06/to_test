@@ -73,7 +73,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python code.py
+            python simple_code.py
 
 
 
